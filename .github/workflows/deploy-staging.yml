@@ -92,7 +92,8 @@ jobs:
           curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
       - name: Azure CLI Login
-        run: az login --service-principal --username ${{ secrets.AZURE_CLIENT_ID }} --password ${{ secrets.AZURE_CLIENT_SECRET }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+        run: |
+          az login --service-principal --username ${{ secrets.AZURE_CLIENT_ID }} --password "${{ secrets.AZURE_CLIENT_SECRET }}" --tenant ${{ secrets.AZURE_TENANT_ID }}
 
       - name: Deploy web app container
         uses: azure/webapps-deploy@v2
