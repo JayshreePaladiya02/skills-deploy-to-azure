@@ -8,9 +8,9 @@ env:
   IMAGE_REGISTRY_URL: ghcr.io
   AZURE_RESOURCE_GROUP: cd-with-actions
   AZURE_APP_PLAN: actions-ttt-deployment
-  AZURE_LOCATION: '"westus"'
+  AZURE_LOCATION: '"eastus"'
   ###############################################
-  ### Replace <username> with GitHub  user name ###
+  ### Replace <username> with GitHub username ###
   ###############################################
   AZURE_WEBAPP_NAME: <JayshreePaladiya02>-ttt-app
 
